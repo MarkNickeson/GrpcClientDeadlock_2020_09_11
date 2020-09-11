@@ -10,7 +10,7 @@ using Xunit;
 
 namespace MinRepro
 {
-    public class DemonstrateSuccessWithAlternateCancellationMode
+    public class DemonstrateSuccessWithCallOptionCancellation
     {
         [Fact]
         public async Task SucceedsIfCancellationViaClientCallOptions()
