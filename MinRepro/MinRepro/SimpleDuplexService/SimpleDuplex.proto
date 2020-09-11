@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package MinRepro;
+
+message ClientToServerMessage {
+  int32 data = 1;
+}
+
+message ServerToClientMessage {
+  int32 data = 1;
+}
+
+service SimpleDuplex{
+	rpc Start (stream ClientToServerMessage) returns (stream ServerToClientMessage);
+}
